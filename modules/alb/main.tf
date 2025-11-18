@@ -1,3 +1,7 @@
+data "aws_caller_identity" "current" {}
+
+data "aws_elb_service_account" "main" {}
+
 resource "aws_lb" "main" {
   name               = var.name
   internal           = false
@@ -174,4 +178,18 @@ resource "aws_lb_listener_rule" "redirect_http_to_https" {
     redirect {
       port        = "443"
       protocol    = "HTTPS"
-      status_code =
+      status_code = "HTTP_301"
+    }
+  }
+
+  condition {
+    path_pattern {
+      values = ["/*"]
+    }
+  }
+
+  tags = {
+    Name        = "${var.name}-redirect-https"
+    Environment = var.environment
+  }
+}

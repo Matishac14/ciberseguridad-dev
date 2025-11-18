@@ -21,7 +21,7 @@ resource "aws_security_group" "alb" {
   }
 
   egress {
-    description = "Todo tráfico saliente"
+    description = "Todo trafico saliente"
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
@@ -57,7 +57,7 @@ resource "aws_security_group" "web" {
   }
 
   egress {
-    description = "Todo tráfico saliente"
+    description = "Todo trafico saliente"
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
@@ -85,7 +85,7 @@ resource "aws_security_group" "db" {
   }
 
   egress {
-    description = "Todo tráfico saliente"
+    description = "Todo trafico saliente"
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
@@ -144,7 +144,7 @@ resource "aws_security_group" "wazuh" {
   }
 
   egress {
-    description = "Todo tráfico saliente"
+    description = "Todo trafico saliente"
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
@@ -176,7 +176,7 @@ resource "aws_security_group" "bastion" {
   }
 
   egress {
-    description = "Todo tráfico saliente"
+    description = "Todo trafico saliente"
     from_port   = 0
     to_port     = 0
     protocol    = "-1"

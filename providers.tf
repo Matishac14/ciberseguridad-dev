@@ -4,7 +4,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.0"  # Usar versión 5.x en lugar de 6.x
+      version = "~> 5.0" # Usar versión 5.x en lugar de 6.x
     }
     datadog = {
       source  = "DataDog/datadog"
