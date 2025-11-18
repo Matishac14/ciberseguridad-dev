@@ -92,8 +92,8 @@ wazuh_enable_public_access = true # Para acceder al dashboard desde internet
 # ==========================================
 # Obtén tus claves en: https://app.datadoghq.com/organization-settings/api-keys
 # Con GitHub Student Pack tienes acceso gratuito
-datadog_api_key = "96c62813035ec87b629adf72b5d94697cfd01482" # ⚠️ REQUERIDO: Tu API Key de Datadog
-datadog_app_key = ""                                         # Opcional pero recomendado
+datadog_api_key = ""         # ⚠️ REQUERIDO: Tu API Key de Datadog
+datadog_app_key = "" # Opcional pero recomendado
 datadog_site    = "datadoghq.com"                            # Para cuenta US, usar "datadoghq.eu" para EU
 
 # ==========================================

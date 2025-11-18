@@ -17,3 +17,4 @@ output "wazuh_dashboard_url" {
   description = "URL del dashboard de Wazuh"
   value       = var.enable_public_access ? "<https://${aws_eip.wazuh>[0].public_ip}" : null
 }
+

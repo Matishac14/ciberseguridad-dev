@@ -115,7 +115,7 @@ module "cloudwatch" {
   source = "./modules/cloudwatch"
 
   alb_arn           = module.alb.alb_arn
-  alb_name          = module.alb.alb_name
+  alb_name          = module.alb.alb_id
   target_group_arn  = module.alb.target_group_arn
   instance_ids      = module.webserver.instance_ids
   db_instance_id    = module.rds.db_instance_id

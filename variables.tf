@@ -204,3 +204,14 @@ variable "enable_bastion" {
   type        = bool
   default     = true
 }
+variable "certificate_arn" {
+  description = "ARN del certificado SSL para HTTPS en ALB"
+  type        = string
+  default     = ""
+}
+
+variable "enable_alb_https" {
+  description = "Habilitar HTTPS en el ALB"
+  type        = bool
+  default     = false
+}
